@@ -19,6 +19,9 @@
 
 #border{
 	height: 3px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #00AFFF;
 }
 
 /*
@@ -56,4 +59,31 @@ ffe553
 .quad{
 	height: 300px;
 	width: 300px;
+}
+
+#container{
+	width: 80%;
+	min-width: 697px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#displayCalendar{
+	border-width: 0px;
+	width: 100%;
+	height: 700px;
+}
+
+#bottomBorder{
+	height: 3px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #00AFFF;
+	margin-top: 10px;
+}
+
+#welcome{
+	margin-bottom: 0px;
 }
