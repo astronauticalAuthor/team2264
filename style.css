@@ -42,9 +42,6 @@ ffe553
 
 .info{
 	margin: 0px;
-	background-color: gray;
-	width: 40%;
-	height: 400px;
 }
 
 .linkFix{
@@ -52,8 +49,11 @@ ffe553
 }
 
 #current{
-	width: inherit;
+	width: 600px;
 	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 }
 
 .quad{
@@ -86,4 +86,49 @@ ffe553
 
 #welcome{
 	margin-bottom: 0px;
+}
+
+.hoverP{
+	overflow: hidden;
+	height: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info{
+	vertical-align: middle;
+}
+
+.info:hover img{
+	height: 0px;
+	overflow: hidden;
+}
+
+.info:hover p{
+	height: 100%;
+	width: 200px;
+	padding: 10px;
+	text-align: justify;
+}
+
+#intro{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+}
+
+#footer{
+	font-size: 10px;
+	text-align: center;
+}
+
+body{
+	color: #424242;
+}
+
+#main{
+	border-left: 3px solid #ffe553;
+	border-right: 3px solid #ffe553;
 }
