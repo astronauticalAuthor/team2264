@@ -1,0 +1,59 @@
+.link{
+	border-radius: 100%;
+	display: inline-block;
+	border: 1px solid black;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	vertical-align: bottom;
+	padding: 5px;
+	margin: 5px;
+}
+
+#nav{
+	float: right;
+	width: inherit;
+}
+
+
+
+#border{
+	height: 3px;
+}
+
+/*
+00afff
+ffe553
+*/
+
+#imagePlaceholder{
+	width: 50%;
+	min-width: 400px;
+	max-width: 750px;
+	height: 10%;
+	min-height: 100px;
+	max-height: 150px;
+	display: inline-block;
+	float: left;
+}
+
+.info{
+	margin: 0px;
+	background-color: gray;
+	width: 40%;
+	height: 400px;
+}
+
+.linkFix{
+	padding-top: 5px;
+}
+
+#current{
+	width: inherit;
+	border-spacing: 0px;
+}
+
+.quad{
+	height: 300px;
+	width: 300px;
+}
