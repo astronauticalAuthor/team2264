@@ -97,7 +97,7 @@ ffe553
 }
 
 #top-left {
-	border-top-left-radius: 100%;
+	border-radius: 100% 0 0 0;
 	background: url('people.JPG');
 	/*
 		for a picture that is not skewed
@@ -113,45 +113,42 @@ ffe553
 }
 
 #top-right {
-	border-top-right-radius: 100%;
+	border-radius: 0 100% 0 0 ;
 	background: url('group.JPG');
 	background-size: cover;
 	background-position: bottom left;
 }
 
 #bottom-left {
-	border-bottom-left-radius: 100%;
+	border-radius: 0 0 0 100%;
 	background: url('laptopGuy.JPG');
 	background-size: cover;
 	background-position: top right;
 }
 
 #bottom-right {
-	border-bottom-right-radius: 100%;
+	border-radius: 0 0 100% 0;
 	background: url('meeting.JPG');
 	background-size: 100% 100%;
 	background-position: top left;
 }
 
-#top-left div, #top-right div, #bottom-left div, #bottom-right div {
-	border-radius: inherit;
-}
-
 .quadFade {
+	border-radius: inherit;
 	height: inherit;
 	width: inherit;
+	/* padding: 30px; */
 }
 .hoverP{
+	
 	margin: 0px auto;
 	height: 100%;
 	width: 200px;
 	padding: 10px;
 	text-align: justify;
+	
 	display: none;
-}
-
-.info{
-	vertical-align: middle;
+	color: #FFF;
 }
 
 .info:hover .quadFade{
