@@ -1,0 +1,134 @@
+.link{
+	border-radius: 100%;
+	display: inline-block;
+	border: 1px solid black;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	vertical-align: bottom;
+	padding: 5px;
+	margin: 5px;
+}
+
+#nav{
+	float: right;
+	width: inherit;
+}
+
+
+
+#border{
+	height: 3px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #00AFFF;
+}
+
+/*
+00afff
+ffe553
+*/
+
+#imagePlaceholder{
+	width: 50%;
+	min-width: 400px;
+	max-width: 750px;
+	height: 10%;
+	min-height: 100px;
+	max-height: 150px;
+	display: inline-block;
+	float: left;
+}
+
+.info{
+	margin: 0px;
+}
+
+.linkFix{
+	padding-top: 5px;
+}
+
+#current{
+	width: 600px;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.quad{
+	height: 300px;
+	width: 300px;
+}
+
+#container{
+	width: 80%;
+	min-width: 697px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#displayCalendar{
+	border-width: 0px;
+	width: 100%;
+	height: 700px;
+}
+
+#bottomBorder{
+	height: 3px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color: #00AFFF;
+	margin-top: 10px;
+}
+
+#welcome{
+	margin-bottom: 0px;
+}
+
+.hoverP{
+	overflow: hidden;
+	height: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.info{
+	vertical-align: middle;
+}
+
+.info:hover img{
+	height: 0px;
+	overflow: hidden;
+}
+
+.info:hover p{
+	height: 100%;
+	width: 200px;
+	padding: 10px;
+	text-align: justify;
+}
+
+#intro{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+}
+
+#footer{
+	font-size: 10px;
+	text-align: center;
+}
+
+body{
+	color: #424242;
+}
+
+#main{
+	border-left: 3px solid #ffe553;
+	border-right: 3px solid #ffe553;
+}
