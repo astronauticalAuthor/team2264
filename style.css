@@ -42,6 +42,13 @@ ffe553
 
 .info{
 	margin: 0px;
+	padding: 0px;
+	display: table-cell;
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+
+	vertical-align: middle;
 }
 
 .linkFix{
@@ -50,15 +57,16 @@ ffe553
 
 #current{
 	width: 600px;
-	border-spacing: 0px;
+	display: table;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
 }
 
-.quad{
-	height: 300px;
-	width: 300px;
+.row {
+	display: table-row;
+	min-height: 100px;
+
 }
 
 #container{
@@ -88,27 +96,70 @@ ffe553
 	margin-bottom: 0px;
 }
 
+#top-left {
+	border-top-left-radius: 100%;
+	background: url('people.JPG');
+	/*
+		for a picture that is not skewed
+	background-size: cover;
+	background-position: bottom left; or whatever looks best
+
+		for a picture skewed to fill the space (not recommended)
+	bacgkround-size: 100% 100%;
+
+	*/
+	background-size: cover;
+	background-position: bottom left;
+}
+
+#top-right {
+	border-top-right-radius: 100%;
+	background: url('group.JPG');
+	background-size: cover;
+	background-position: bottom left;
+}
+
+#bottom-left {
+	border-bottom-left-radius: 100%;
+	background: url('laptopGuy.JPG');
+	background-size: cover;
+	background-position: top right;
+}
+
+#bottom-right {
+	border-bottom-right-radius: 100%;
+	background: url('meeting.JPG');
+	background-size: 100% 100%;
+	background-position: top left;
+}
+
+#top-left div, #top-right div, #bottom-left div, #bottom-right div {
+	border-radius: inherit;
+}
+
+.quadFade {
+	height: inherit;
+	width: inherit;
+}
 .hoverP{
-	overflow: hidden;
-	height: 0px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0px auto;
+	height: 100%;
+	width: 200px;
+	padding: 10px;
+	text-align: justify;
+	display: none;
 }
 
 .info{
 	vertical-align: middle;
 }
 
-.info:hover img{
-	height: 0px;
-	overflow: hidden;
+.info:hover .quadFade{
+	background-color: rgba(0, 0, 0, .5); /* make this a little browner/less of a flat black */
 }
 
-.info:hover p{
-	height: 100%;
-	width: 200px;
-	padding: 10px;
-	text-align: justify;
+.info:hover .hoverP{
+	display: block;
 }
 
 #intro{
