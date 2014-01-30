@@ -17,12 +17,10 @@ html, body {
 	margin-right: 5%;
 }
 
-nav {
-	
-	margin-left: auto;
-	margin-right: auto;
-	height: 100%;
-	
+#helper {
+	float: left;
+	height: 50%;
+	margin-bottom:-38px;
 }
 
 .link{
@@ -38,7 +36,9 @@ nav {
 	-moz-box-sizing: border-box; 
 	box-sizing: border-box;
 	margin: 0px 5px;
+	margin-top: 3%; /* Don't know why this works, but it does.... */
 	float: left;
+
 
 }
 
@@ -189,9 +189,10 @@ ffe553
 	font-family: sans-serif;
 }
 
-#footer{
+footer{
 	font-size: 10px;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 body{
