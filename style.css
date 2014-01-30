@@ -129,28 +129,50 @@ ffe553
 
 .quadFade {
 	border-radius: inherit;
-	height: inherit;
-	width: inherit;
-	/* padding: 30px; */
-}
-.hoverP{
-	
-	margin: 0px auto;
 	height: 100%;
-	width: 200px;
+	width: 100%;
+	position: relative;
+}
+.circleText{
+	height: 212px;
+	width: 212px;
 	padding: 10px;
-	text-align: justify;
-	
-	display: none;
+	position: absolute;
+	margin: 0px 0px;
 	color: #FFF;
+	display: block;
+	visibility: visible;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+
+#tl {
+	bottom: 0;
+	right: 0;
+}
+
+#tr {
+	bottom: 0;
+	left: 0;
+}
+
+#bl {
+	top: 0;
+	right: 0;
+}
+
+#br {
+	top: 0;
+	left: 0;
 }
 
 .info:hover .quadFade{
 	background-color: rgba(0, 0, 0, .5); /* make this a little browner/less of a flat black */
 }
 
-.info:hover .hoverP{
-	display: block;
+.info:hover .circleText{
+	visibility: visible;
 }
 
 #intro{
