@@ -1,5 +1,6 @@
 html, body {
 	height: 100%;
+	background-color: #D4D4D4;
 }
 
 #welcome{
@@ -41,9 +42,11 @@ html, body {
 
 #border{
 	height: 3px;
-	border-top: 3px solid #00AFFF;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
+	background-color: #00AFFF;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /*
@@ -85,10 +88,11 @@ ffe553
 
 #bottomBorder{
 	height: 3px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 	background-color: #00AFFF;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #top-left {
@@ -228,6 +232,5 @@ body{
 }
 
 #main{
-	border-left: 3px solid #ffe553;
-	border-right: 3px solid #ffe553;
+	background-color: #FFF;
 }
