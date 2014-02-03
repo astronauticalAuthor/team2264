@@ -4,14 +4,11 @@ html, body {
 
 #welcome{
 	margin-bottom: 0px;
-	height: 10%;
-	min-height: 100px;
-	max-height: 150px;
+	min-width: 715px;
 
 }
 
-#logo{
-	height: 100%;	
+#logo{	
 	float: left;
 	margin-left: 2%;
 	margin-right: 5%;
@@ -60,8 +57,7 @@ ffe553
 	height: 300px;
 	width: 300px;
 	overflow: hidden;
-
-	vertical-align: middle;
+	position: relative;
 }
 
 #circle{
@@ -78,6 +74,7 @@ ffe553
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+	padding: 0 5px;
 }
 
 #displayCalendar{
@@ -142,7 +139,7 @@ ffe553
 .circleText{
 	height: 212px;
 	width: 212px;
-	padding: 20px;
+	padding: 10px;
 	position: absolute;
 	margin: 0px 0px;
 	color: #FFF;
@@ -153,24 +150,51 @@ ffe553
 	box-sizing: border-box; 
 }
 
-#tl {
-	bottom: 0;
+.left {
 	right: 0;
 }
 
-#tr {
+.right {
+	left: 0;
+}
+
+.bottom {
+	top: 0;
+	padding-top: 45px;
+}
+
+.top {
 	bottom: 0;
-	left: 0;
+	padding-bottom: 45px;
 }
 
-#bl {
+.tagBottom {
 	top: 0;
-	right: 0;
 }
 
-#br {
-	top: 0;
-	left: 0;
+.tagTop {
+	bottom: 0;
+}
+
+.circleBox {
+	position: absolute;
+	margin: 0 20px;
+	min-width: 100px;
+	overflow: hidden;
+	height: 36px;
+	-webkit-transition: height cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+	transition: height cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s;
+}
+
+.circleTag {
+	background-color: rgba(255, 255, 255, .7);
+	margin-left: auto;
+	margin-right: auto;
+	font-family: sans-serif;
+	font-size: 17pt;
+	padding: 5px 10px;
+	width: auto;
+	display: inline-block;
 }
 
 .info:hover .quadFade{
@@ -179,6 +203,10 @@ ffe553
 
 .info:hover .circleText{
 	visibility: visible;
+}
+
+.info:hover .circleBox {
+	height: 0px;
 }
 
 #intro{
