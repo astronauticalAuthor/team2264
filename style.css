@@ -41,9 +41,9 @@ html, body {
 
 #border{
 	height: 3px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	background-color: #00AFFF;
+	border-top: 3px solid #00AFFF;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 }
 
 /*
