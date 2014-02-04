@@ -3,6 +3,20 @@ html, body {
 	background-color: #D4D4D4;
 }
 
+body{
+	color: #424242;
+}
+
+#container{
+	width: 80%;
+	min-width: 697px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	padding: 0 5px;
+}
+
 #welcome{
 	margin-bottom: 0px;
 	min-width: 715px;
@@ -20,7 +34,7 @@ html, body {
 	margin-bottom:-38px;
 }
 
-.link{
+.link, #inactive:active, #inactive:hover{
 	border-radius: 100%;
 	background-color: #FFF;
 	display: block;
@@ -46,30 +60,44 @@ html, body {
 
 
     background: #EEE;
-  	background: -moz-linear-gradient(0% 100% 80deg, #FFF, #EEE);
+  	background: -moz-linear-gradient(0% 100% 45deg, #FFF, #EEE);
   	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#EEE));
+  	background: linear-gradient(to bottom left, #FFF, #EEE);
 
     -moz-box-shadow: inset -1px 1px 0 0 #FFF, -1px 2px 2px 0 #b3b3b3;
   	-webkit-box-shadow: inset -1px 1px 0 0 #FFF, -1px 2px 2px 0 #b3b3b3;
+  	box-shadow: inset -1px 1px 0 0 #FFF, -1px 2px 2px 0 #b3b3b3;
 
   	text-shadow: 0 -1px 1px #BBB;
+
+  	border: none;
 }
 
 .link:hover{
 	background: #DDD;
-	background: -moz-linear-gradient(0% 100% 90deg, #EEE, #DDD);
+	background: -moz-linear-gradient(0% 100% 45deg, #EEE, #DDD);
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEE), to(#DDD));
-	border-top: 1px solid #EEE;
-	border-right: 1px solid #FFF;
-	border-bottom: 1px solid #EEE;
-	border-left: 1px solid #DDD;
+	background: linear-gradient(to bottom left, #EEE, #DDD);
+	/*
+	border-top: 1px solid #DDD;
+	border-right: 1px solid #EEE;
+	border-bottom: 1px solid #DDD;
+	border-left: 1px solid #CCC;
+	*/
 	-moz-box-shadow: inset -1px 1px 0 0 #EEE;
 	-webkit-box-shadow: inset -1px 1px 0 0 #EEE;
+	box-shadow: inset -1px 1px 0 0  #EEE, inset 1px -1px 2px 0 #b3b3b3;
 	text-shadow: 0 -1px 1px #AAA;
 }
 
-#inactive {
-
+.link:active {
+  background: #CCC;
+  border: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+  -moz-box-shadow: inset 0 0 6px 3px #AAA;
+  -webkit-box-shadow: inset 0 0 6px 3px #AAA;
+  box-shadow: inset 0 0 6px 3px #AAA;
+  text-shadow: 0 -1px 1px #AAA;
 }
 
 #border{
@@ -86,6 +114,29 @@ html, body {
 ffe553
 */
 
+#main{
+	background-color: #FFF;
+	padding: 20px;
+}
+
+#intro{
+	text-align: center;
+	font-size: 60px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+
+#calendar{
+	border-width: 0px;
+	width: 90%;
+	height: 580px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .info{
 	margin: 0px;
 	padding: 0px;
@@ -100,22 +151,6 @@ ffe553
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-}
-
-#container{
-	width: 80%;
-	min-width: 697px;
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-	padding: 0 5px;
-}
-
-#displayCalendar{
-	border-width: 0px;
-	width: 100%;
-	height: 700px;
 }
 
 #bottomBorder{
@@ -244,24 +279,8 @@ ffe553
 	height: 0px;
 }
 
-#intro{
-	text-align: center;
-	font-size: 60px;
-	margin-top: 5px;
-	margin-bottom: 15px;
-	font-family: sans-serif;
-}
-
 footer{
 	font-size: 10px;
 	text-align: center;
 	margin-bottom: 10px;
-}
-
-body{
-	color: #424242;
-}
-
-#main{
-	background-color: #FFF;
 }
