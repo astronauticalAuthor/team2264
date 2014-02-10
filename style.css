@@ -119,13 +119,22 @@ ffe553
 	padding: 20px;
 }
 
-#intro{
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
-	font-size: 60px;
-	margin-top: 5px;
-	margin-bottom: 15px;
 	font-family: sans-serif;
 	font-weight: normal;
+}
+
+h1{
+	font-size: 45pt;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+h2 {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 40pt;
 }
 
 #calendar{
@@ -135,6 +144,35 @@ ffe553
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#sponsorTable {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sponsorRow {
+	display: table-row;
+}
+
+.imageCell {
+	width: 40%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.textCell {
+	width: 60%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 30px;
+}
+
+.sponsor {
+	display: block;
+	margin: 10px auto;
 }
 
 .info{
