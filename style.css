@@ -143,6 +143,11 @@ h2 {
 	font-size: 40pt;
 }
 
+h3 {
+	font-size: 17pt;
+	margin: 0px;
+}
+
 #calendar{
 	border-width: 0px;
 	width: 90%;
@@ -197,6 +202,7 @@ h2 {
 .bio {
 	display: table-cell;
 	vertical-align: middle;
+	padding: 0 15px;
 }
 
 .sponsor {
